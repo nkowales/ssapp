@@ -4,7 +4,7 @@ Flask==0.12.1
 itsdangerous==0.24
 Jinja2==2.9.6
 MarkupSafe==1.0
--e git+git@github.com:nkowales/ssapp.git@ba0fad3ebc32999d43d6a7d80b0478ce31353b29#egg=mysql_connector_python&subdirectory=mysql-connector-python-2.1.5
+-e git+https://github.com/nkowales/ssapp/mysql-connector-python-2.1.5.tar.gz
 packaging==16.8
 pyparsing==2.2.0
 requests==2.13.0
