@@ -8,15 +8,15 @@ pos = ['supp', 'bot', 'mid', 'jungle', 'top']#valid position entries
 posnn = {'support' : 'supp', 'sup' : 'supp', 'adc' : 'bot', 'bottom' : 'bot', 'middle' : 'mid', 'solomid' : 'mid', 'jung' : 'jungle', 'jun' : 'jungle', 'j' : 'jungle'}#common alternate position names
 
 application = Flask(__name__)
-@app.route("/")
+@application.route("/")
 def main():
 	return render_template('index.html')
 
-@app.route('/showBasic')
+@application.route('/showBasic')
 def showBasic():
 	return render_template('basicsuggestion.html')
 
-@app.route('/apptest',methods=['POST'])
+@application.route('/apptest',methods=['POST'])
 def apptest():
 	_name = request.form['inputName']
 	_champ = request.form['inputChamp']
